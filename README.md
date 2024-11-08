@@ -1,7 +1,8 @@
-# LINE6 Driver for Linux
+# LINE6 POD-HD PRO X Driver for Linux
 
-How to run PODHD Pro X under linux
+<img src="line6_podhdpro.png" alt="MarineGEO circle logo" style="height: 400px; width:600px;"/>
 
+How to run POD-HD Pro X under linux
 Why ? : Because we love linux !  
 Tested on : Ubuntu 22-04 (jammy) 
 
