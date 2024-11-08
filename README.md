@@ -33,17 +33,16 @@ For me is 6.8.0 and extract under __/usr/src/__
 Remove root permission
 ```
 > cd /usr/src/
-> chown -R $(whoami):$(whoami) linux_6.8.0/
+> chown -R $(whoami):$(whoami) linux-6.8/
 ```
 Copy your current kernel config inside the source
 ```
-> cd /usr/src/linux_6.8.0
+> cd /usr/src/linux-6.8
 > cp /boot/config-$(uname -r) .config
 ```
 make module_prepare
 ```
-> cd /usr/src/linux_6.8.0
-> cp /boot/config-$(uname -r) .config
+> cd /usr/src/linux-6.8
 > make oldconfig
 > make modules_prepare
 ```
@@ -72,7 +71,7 @@ static const struct usb_device_id podhd_id_table[] = {
 ##  5) Rebuild module
 
 ```
-> cd linux-6.8.0/sound/usb/line6
+> cd linux-6.8/sound/usb/line6
 > make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
 ```
 if all is ok you have successfully build the modules for the PODHD Pro X.  
