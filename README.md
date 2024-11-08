@@ -1,6 +1,8 @@
-# Running PODHD Pro X under linux
+# LINE6 Driver for Linux
 
-Because we love linux !  
+How to run PODHD Pro X under linux
+
+Why ? : Because we love linux !  
 Tested on : Ubuntu 22-04 (jammy) 
 
 ## 1) Get the righ ID of the PODHD PRO X:
