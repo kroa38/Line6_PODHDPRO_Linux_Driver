@@ -1,0 +1,306 @@
+dell@dell:/usr/src$ sudo ./podhd.sh
+[sudo] password for dell: 
+.config:10812:warning: symbol value 'm' invalid for ANDROID_BINDER_IPC
+.config:10813:warning: symbol value 'm' invalid for ANDROID_BINDERFS
+*
+* Restart config...
+*
+*
+* Processor type and features
+*
+Symmetric multi-processing support (SMP) [Y/n/?] y
+Support x2apic (X86_X2APIC) [Y/?] y
+Enable MPS table (X86_MPPARSE) [Y/n/?] y
+x86 CPU resource control support (X86_CPU_RESCTRL) [Y/n/?] y
+Support for extended (non-PC) x86 platforms (X86_EXTENDED_PLATFORM) [Y/n/?] y
+Numascale NumaChip (X86_NUMACHIP) [Y/n/?] y
+ScaleMP vSMP (X86_VSMP) [N/y/?] n
+SGI Ultraviolet (X86_UV) [Y/n/?] y
+Goldfish (Virtual Platform) (X86_GOLDFISH) [N/y/?] n
+Intel MID platform support (X86_INTEL_MID) [N/y/?] n
+Intel Low Power Subsystem Support (X86_INTEL_LPSS) [Y/n/?] y
+AMD ACPI2Platform devices support (X86_AMD_PLATFORM_DEVICE) [Y/n/?] y
+Intel SoC IOSF Sideband support for SoC platforms (IOSF_MBI) [Y/?] y
+  Enable IOSF sideband access through debugfs (IOSF_MBI_DEBUG) [Y/n/?] y
+Single-depth WCHAN output (SCHED_OMIT_FRAME_POINTER) [Y/n/?] y
+Processor family
+  1. Opteron/Athlon64/Hammer/K8 (MK8)
+  2. Intel P4 / older Netburst based Xeon (MPSC)
+  3. Core 2/newer Xeon (MCORE2)
+  4. Intel Atom (MATOM)
+> 5. Generic-x86-64 (GENERIC_CPU)
+choice[1-5?]: 5
+Enable DMI scanning (DMI) [Y/?] y
+Old AMD GART IOMMU support (GART_IOMMU) [Y/n/?] y
+Enable Maximum number of SMP Processors and NUMA Nodes (MAXSMP) [Y/n/?] y
+Cluster scheduler support (SCHED_CLUSTER) [Y/n/?] y
+Multi-core scheduler support (SCHED_MC) [Y/n/?] y
+  CPU core priorities scheduler support (SCHED_MC_PRIO) [Y/n/?] y
+Reroute for broken boot IRQs (X86_REROUTE_FOR_BROKEN_BOOT_IRQS) [Y/n/?] y
+Machine Check / overheating reporting (X86_MCE) [Y/?] y
+  Support for deprecated /dev/mcelog character device (X86_MCELOG_LEGACY) [Y/n/?] y
+  Intel MCE features (X86_MCE_INTEL) [Y/n/?] y
+  AMD MCE features (X86_MCE_AMD) [Y/n/?] y
+Machine check injector support (X86_MCE_INJECT) [M/n/y/?] m
+Enable support for 16-bit segments (X86_16BIT) [Y/n/?] y
+Enable vsyscall emulation (X86_VSYSCALL_EMULATION) [Y/n/?] y
+IOPERM and IOPL Emulation (X86_IOPL_IOPERM) [Y/n/?] y
+Late microcode loading (DANGEROUS) (MICROCODE_LATE_LOADING) [N/y/?] n
+/dev/cpu/*/msr - Model-specific register support (X86_MSR) [M/n/y/?] m
+/dev/cpu/*/cpuid - CPU information support (X86_CPUID) [M/n/y/?] m
+Enable 5-level page tables support (X86_5LEVEL) [Y/n/?] y
+Enable statistic for Change Page Attribute (X86_CPA_STATISTICS) [N/y/?] n
+AMD Secure Memory Encryption (SME) support (AMD_MEM_ENCRYPT) [Y/n/?] y
+  Activate AMD Secure Memory Encryption (SME) by default (AMD_MEM_ENCRYPT_ACTIVE_BY_DEFAULT) [N/y/?] (NEW) N
+NUMA Memory Allocation and Scheduler Support (NUMA) [Y/n/?] y
+  Old style AMD Opteron NUMA detection (AMD_NUMA) [Y/n/?] y
+  ACPI NUMA detection (X86_64_ACPI_NUMA) [Y/n/?] y
+  NUMA emulation (NUMA_EMU) [N/y/?] n
+Enable sysfs memory/probe interface (ARCH_MEMORY_PROBE) [Y/n/?] y
+Support non-standard NVDIMMs and ADR protected memory (X86_PMEM_LEGACY) [Y/n/m/?] y
+Check for low memory corruption (X86_CHECK_BIOS_CORRUPTION) [Y/n/?] y
+  Set the default setting of memory_corruption_check (X86_BOOTPARAM_MEMORY_CORRUPTION_CHECK) [Y/n/?] y
+MTRR (Memory Type Range Register) support (MTRR) [Y/n/?] y
+  MTRR cleanup support (MTRR_SANITIZER) [Y/n/?] y
+    MTRR cleanup enable value (0-1) (MTRR_SANITIZER_ENABLE_DEFAULT) [1] 1
+    MTRR cleanup spare reg num (0-7) (MTRR_SANITIZER_SPARE_REG_NR_DEFAULT) [1] 1
+  x86 PAT support (X86_PAT) [Y/n/?] y
+User Mode Instruction Prevention (X86_UMIP) [Y/n/?] y
+Indirect Branch Tracking (X86_KERNEL_IBT) [N/y/?] n
+Memory Protection Keys (X86_INTEL_MEMORY_PROTECTION_KEYS) [Y/n/?] y
+TSX enable mode
+> 1. off (X86_INTEL_TSX_MODE_OFF)
+  2. on (X86_INTEL_TSX_MODE_ON)
+  3. auto (X86_INTEL_TSX_MODE_AUTO)
+choice[1-3?]: 1
+Software Guard eXtensions (SGX) (X86_SGX) [Y/n/?] y
+X86 userspace shadow stack (X86_USER_SHADOW_STACK) [Y/n/?] y
+EFI runtime service support (EFI) [Y/n/?] y
+  EFI stub support (EFI_STUB) [Y/n/?] y
+    EFI handover protocol (DEPRECATED) (EFI_HANDOVER_PROTOCOL) [Y/n/?] y
+    EFI mixed-mode support (EFI_MIXED) [Y/n/?] y
+  Enable EFI fake memory map (EFI_FAKE_MEMMAP) [N/y/?] n
+  Export EFI runtime maps to sysfs (EFI_RUNTIME_MAP) [Y/?] y
+Timer frequency
+  1. 100 HZ (HZ_100)
+  2. 250 HZ (HZ_250)
+  3. 300 HZ (HZ_300)
+> 4. 1000 HZ (HZ_1000)
+choice[1-4?]: 4
+Physical address where the kernel is loaded (PHYSICAL_START) [0x1000000] 0x1000000
+Build a relocatable kernel (RELOCATABLE) [Y/?] y
+  Randomize the address of the kernel image (KASLR) (RANDOMIZE_BASE) [Y/n/?] y
+Alignment value to which kernel should be aligned (PHYSICAL_ALIGN) [0x200000] 0x200000
+Randomize the kernel memory sections (RANDOMIZE_MEMORY) [Y/n/?] y
+  Physical memory mapping padding (RANDOMIZE_MEMORY_PHYSICAL_PADDING) [0xa] 0xa
+Linear Address Masking support (ADDRESS_MASKING) [N/y/?] (NEW) N
+Disable the 32-bit vDSO (needed for glibc 2.3.3) (COMPAT_VDSO) [N/y/?] n
+vsyscall table for legacy applications
+> 1. Emulate execution only (LEGACY_VSYSCALL_XONLY)
+  2. None (LEGACY_VSYSCALL_NONE)
+choice[1-2?]: 1
+Built-in kernel command line (CMDLINE_BOOL) [N/y/?] n
+Enable the LDT (local descriptor table) (MODIFY_LDT_SYSCALL) [Y/n/?] y
+Enforce strict size checking for sigaltstack (STRICT_SIGALTSTACK_SIZE) [N/y/?] n
+Kernel Live Patching (LIVEPATCH) [Y/n/?] y
+*
+* Mitigations for speculative execution vulnerabilities
+*
+Mitigations for speculative execution vulnerabilities (SPECULATION_MITIGATIONS) [Y/n/?] (NEW) n
+*
+* Support for paging of anonymous memory (swap)
+*
+Support for paging of anonymous memory (swap) (SWAP) [Y/n/?] y
+  Compressed cache for swap pages (ZSWAP) [Y/n/?] y
+    Enable the compressed cache for swap pages by default (ZSWAP_DEFAULT_ON) [N/y/?] n
+    Invalidate zswap entries when pages are loaded (ZSWAP_EXCLUSIVE_LOADS_DEFAULT_ON) [N/y/?] n
+    Shrink the zswap pool on memory pressure (ZSWAP_SHRINKER_DEFAULT_ON) [Y/n/?] y
+    Default compressor
+      1. Deflate (ZSWAP_COMPRESSOR_DEFAULT_DEFLATE)
+    > 2. LZO (ZSWAP_COMPRESSOR_DEFAULT_LZO)
+      3. 842 (ZSWAP_COMPRESSOR_DEFAULT_842)
+      4. LZ4 (ZSWAP_COMPRESSOR_DEFAULT_LZ4)
+      5. LZ4HC (ZSWAP_COMPRESSOR_DEFAULT_LZ4HC)
+      6. zstd (ZSWAP_COMPRESSOR_DEFAULT_ZSTD)
+    choice[1-6?]: 2
+    Default allocator
+    > 1. zbud (ZSWAP_ZPOOL_DEFAULT_ZBUD)
+      2. z3fold (ZSWAP_ZPOOL_DEFAULT_Z3FOLD) (NEW)
+      3. zsmalloc (ZSWAP_ZPOOL_DEFAULT_ZSMALLOC)
+    choice[1-3?]: 
+    2:1 compression allocator (zbud) (ZBUD) [Y/?] y
+    3:1 compression allocator (z3fold) (Z3FOLD) [M/n/y/?] m
+    N:1 compression allocator (zsmalloc) (ZSMALLOC) [Y/m/?] y
+      Export zsmalloc statistics (ZSMALLOC_STAT) [N/y/?] n
+      Maximum number of physical pages per-zspage (ZSMALLOC_CHAIN_SIZE) [8] 8
+*
+* Bluetooth subsystem support
+*
+Bluetooth subsystem support (BT) [M/n/y/?] m
+  Bluetooth Classic (BR/EDR) features (BT_BREDR) [Y/n/?] y
+    RFCOMM protocol support (BT_RFCOMM) [M/n/y/?] m
+      RFCOMM TTY support (BT_RFCOMM_TTY) [Y/n/?] y
+    BNEP protocol support (BT_BNEP) [M/n/y/?] m
+      Multicast filter support (BT_BNEP_MC_FILTER) [Y/n/?] y
+      Protocol filter support (BT_BNEP_PROTO_FILTER) [Y/n/?] y
+    CMTP protocol support (BT_CMTP) [M/n/y/?] m
+    HIDP protocol support (BT_HIDP) [M/n/y/?] m
+    Bluetooth High Speed (HS) features (BT_HS) [N/y/?] (NEW) N
+  Bluetooth Low Energy (LE) features (BT_LE) [Y/n/?] y
+    Bluetooth L2CAP Enhanced Credit Flow Control (BT_LE_L2CAP_ECRED) [Y/n/?] y
+    Bluetooth 6LoWPAN support (BT_6LOWPAN) [M/n/?] m
+  Enable LED triggers (BT_LEDS) [Y/n/?] y
+  Enable Microsoft extensions (BT_MSFTEXT) [Y/n/?] y
+  Enable Android Open Source Project extensions (BT_AOSPEXT) [Y/n/?] y
+  Export Bluetooth internals in debugfs (BT_DEBUGFS) [Y/n/?] y
+  Bluetooth self testing support (BT_SELFTEST) [N/y/?] n
+*
+* Android
+*
+Android Binder IPC Driver (ANDROID_BINDER_IPC) [N/y/?] (NEW) N
+*
+* Library routines
+*
+Automatically choose fastest RAID6 PQ functions (RAID6_PQ_BENCHMARK) [Y/n/?] y
+Generic bitfield packing and unpacking (PACKING) [Y/?] y
+CORDIC algorithm (CORDIC) [M/y/?] m
+Simple prime number generator for testing (PRIME_NUMBERS) [N/m/y/?] n
+CRC-CCITT functions (CRC_CCITT) [Y/?] y
+CRC16 functions (CRC16) [Y/?] y
+CRC calculation for the T10 Data Integrity Field (CRC_T10DIF) [Y/?] y
+CRC calculation for the Rocksoft model CRC64 (CRC64_ROCKSOFT) [Y/?] y
+CRC ITU-T V.41 functions (CRC_ITU_T) [M/y/?] m
+CRC32/CRC32c functions (CRC32) [Y/?] y
+  CRC32 perform self test on init (CRC32_SELFTEST) [N/m/y/?] n
+  CRC32 implementation
+  > 1. Slice by 8 bytes (CRC32_SLICEBY8)
+    2. Slice by 4 bytes (CRC32_SLICEBY4)
+    3. Sarwate's Algorithm (one byte at a time) (CRC32_SARWATE)
+    4. Classic Algorithm (one bit at a time) (CRC32_BIT)
+  choice[1-4?]: 1
+CRC64 functions (CRC64) [Y/?] y
+CRC4 functions (CRC4) [M/n/y/?] m
+CRC7 functions (CRC7) [M/y/?] m
+CRC32c (Castagnoli, et al) Cyclic Redundancy-Check (LIBCRC32C) [M/y/?] m
+CRC8 function (CRC8) [M/y/?] m
+PRNG perform self test on init (RANDOM32_SELFTEST) [N/y/?] n
+XZ decompression support (XZ_DEC) [Y/?] y
+  x86 BCJ filter decoder (XZ_DEC_X86) [Y/n/?] y
+  PowerPC BCJ filter decoder (XZ_DEC_POWERPC) [Y/n/?] y
+  ARM BCJ filter decoder (XZ_DEC_ARM) [Y/n/?] y
+  ARM-Thumb BCJ filter decoder (XZ_DEC_ARMTHUMB) [Y/n/?] y
+  SPARC BCJ filter decoder (XZ_DEC_SPARC) [Y/n/?] y
+  MicroLZMA decoder (XZ_DEC_MICROLZMA) [Y/n/?] y
+XZ decompressor tester (XZ_DEC_TEST) [M/n/y/?] m
+Dynamic allocation of DMA bounce buffers (SWIOTLB_DYNAMIC) [Y/n/?] y
+Enable debugging of DMA-API usage (DMA_API_DEBUG) [N/y/?] n
+Enable benchmarking of streaming DMA mapping (DMA_MAP_BENCHMARK) [N/y/?] n
+Set number of CPUs at compile time (FORCE_NR_CPUS) [N/y/?] (NEW) N
+glob self-test on init (GLOB_SELFTEST) [N/m/y/?] n
+IRQ polling library (IRQ_POLL) [Y/?] y
+Select compiled-in fonts (FONTS) [Y/n/?] y
+  VGA 8x8 font (FONT_8x8) [Y/n/?] y
+  VGA 8x16 font (FONT_8x16) [Y/?] y
+  Mac console 6x11 font (not supported by all drivers) (FONT_6x11) [N/y/?] n
+  console 7x14 font (not supported by all drivers) (FONT_7x14) [N/y/?] n
+  Pearl (old m68k) console 8x8 font (FONT_PEARL_8x8) [N/y/?] n
+  Acorn console 8x8 font (FONT_ACORN_8x8) [Y/n/?] y
+  Mini 4x6 font (FONT_MINI_4x6) [N/y/?] n
+  Medium-size 6x10 font (FONT_6x10) [Y/n/?] y
+  console 10x18 font (not supported by all drivers) (FONT_10x18) [N/y/?] n
+Sparc console 8x16 font (FONT_SUN8x16) [N/y/?] n
+Sparc console 12x22 font (not supported by all drivers) (FONT_SUN12x22) [N/y/?] n
+Terminus 16x32 font (not supported by all drivers) (FONT_TER16x32) [Y/n/?] y
+OLED 6x8 font (FONT_6x8) [N/y/?] n
+Maximum number of frames in trace saved in stack depot (STACKDEPOT_MAX_FRAMES) [64] 64
+Boot-time test for lwq queuing (LWQ_TEST) [N/y/?] n
+*
+* Undefined behaviour sanity checker
+*
+Undefined behaviour sanity checker (UBSAN) [Y/n/?] y
+  Abort on Sanitizer warnings (smaller kernel but less verbose) (UBSAN_TRAP) [N/y/?] n
+  Perform array index bounds checking (UBSAN_BOUNDS) [Y/n/?] y
+  Perform checking for bit-shift overflows (UBSAN_SHIFT) [Y/n/?] y
+  Perform checking for integer divide-by-zero (UBSAN_DIV_ZERO) [N/y/?] n
+  Perform checking for non-boolean values used as boolean (UBSAN_BOOL) [Y/n/?] y
+  Perform checking for out of bounds enum values (UBSAN_ENUM) [Y/n/?] y
+  Perform checking for misaligned pointer usage (UBSAN_ALIGNMENT) [N/y/?] n
+  Enable instrumentation for the entire kernel (UBSAN_SANITIZE_ALL) [Y/n/?] (NEW) n
+  Module for testing for undefined behavior detection (TEST_UBSAN) [N/m/?] n
+#
+# configuration written to .config
+#
+  SYNC    include/config/auto.conf.cmd
+  UPD     include/generated/compile.h
+  CALL    scripts/checksyscalls.sh
+  DESCEND objtool
+  HOSTCC  /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/fixdep.o
+  HOSTLD  /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/fixdep-in.o
+  LINK    /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/fixdep
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/exec-cmd.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/help.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/pager.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/parse-options.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/run-command.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/sigchain.o
+  LD      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/libsubcmd-in.o
+  AR      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libsubcmd/libsubcmd.a
+  INSTALL libsubcmd_headers
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/arch/x86/special.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/arch/x86/decode.o
+  LD      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/arch/x86/objtool-in.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/weak.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/check.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/special.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/builtin-check.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/elf.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/objtool.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/orc_gen.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/orc_dump.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libstring.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/libctype.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/str_error_r.o
+  CC      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/librbtree.o
+  LD      /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/objtool-in.o
+  LINK    /usr/src/linux_6.8.0.orig/linux-6.8/tools/objtool/objtool
+make: Entering directory '/usr/src/linux-headers-6.8.0-59-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04) 12.3.0
+  You are using:           gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04) 12.3.0
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/capture.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/driver.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/midi.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/midibuf.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/pcm.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/playback.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-line6.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/pod.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-pod.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/podhd.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-podhd.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/toneport.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-toneport.o
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/variax.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-variax.o
+  MODPOST /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/Module.symvers
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-line6.mod.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-line6.ko
+  BTF [M] /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-line6.ko
+Skipping BTF generation for /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-line6.ko due to unavailability of vmlinux
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-pod.mod.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-pod.ko
+  BTF [M] /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-pod.ko
+Skipping BTF generation for /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-pod.ko due to unavailability of vmlinux
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-podhd.mod.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-podhd.ko
+  BTF [M] /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-podhd.ko
+Skipping BTF generation for /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-podhd.ko due to unavailability of vmlinux
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-toneport.mod.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-toneport.ko
+  BTF [M] /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-toneport.ko
+Skipping BTF generation for /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-toneport.ko due to unavailability of vmlinux
+  CC [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-variax.mod.o
+  LD [M]  /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-variax.ko
+  BTF [M] /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-variax.ko
+Skipping BTF generation for /usr/src/linux_6.8.0.orig/linux-6.8/sound/usb/line6/snd-usb-variax.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.8.0-59-generic'
