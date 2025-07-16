@@ -1,0 +1,6 @@
+# use this contrab file for loading sound driver after startup
+# use 'sudo crontab -e' and add this lines
+# customize the command with your own directory
+# see the two other script file
+
+@reboot sleep 60 && /usr/bin/bash /home/dell/line6/load-driver.sh
