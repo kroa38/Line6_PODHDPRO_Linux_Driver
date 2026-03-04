@@ -2,9 +2,9 @@
 
 <img src="line6_podhdpro.png" alt="MarineGEO circle logo" style="height: 400px; width:600px;"/>
 
-How to run POD-HD Pro X under linux
+How to run POD-HD Pro X under linux  
 Why ? : Because we love linux !  
-Tested on : Ubuntu 22-04 (jammy) 
+Tested on : Debian 13 (Trixie)  
 
 ## 1) Get the righ ID of the PODHD PRO X:
 
@@ -21,31 +21,34 @@ __0x415a__ = __PODHD Pro X ID__
 Get your current kernel version:
 ```
 > uname -r
-6.8.0-47-generic
+6.12.73+deb13-amd64
 ```
-Download the most closest version of your kernel:  
-For me is 6.8.0 and extract under __/usr/src/__
+Download the most closest version of your kernel and headers:  
+	->  For me is __v6.12__  
   
 ```
-> wget https://mirrors.edge.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.gz
-> tar -xvf linux-6.8.tar.gz
-> mv linux-6.8/ /usr/src/.
+sudo apt update
+sudo apt install linux-source-6.12
+cd /usr/src
+sudo tar xf linux-source-6.12.tar.xz 
+sudo apt install linux-headers-6.12.73+deb13-amd64
+
 ```
 
 ## 3) Make Module Prepare
 Remove root permission
 ```
 > cd /usr/src/
-> chown -R $(whoami):$(whoami) linux-6.8/
+> chown -R $(whoami):$(whoami) linux-source-6.12/
 ```
 Copy your current kernel config inside the source
 ```
-> cd /usr/src/linux-6.8
+> cd /usr/src/linux-source-6.12
 > cp /boot/config-$(uname -r) .config
 ```
 make module_prepare
 ```
-> cd /usr/src/linux-6.8
+> cd /usr/src/linux-source-6.12
 > make oldconfig
 > make modules_prepare
 ```
@@ -53,7 +56,7 @@ make module_prepare
 ## 4) Modify PODHD. C file
 
 For working you have to simply modify the value of LINE6_PODHDDESKTOP inside the file :  
-> linux-6.8.0/sound/usb/line6/podhd.c
+> linux-source-6.12.0/sound/usb/line6/podhd.c
 
 > replace __0x4156__ by __0x415a__
 
@@ -74,7 +77,7 @@ static const struct usb_device_id podhd_id_table[] = {
 ##  5) Rebuild module
 
 ```
-> cd linux-6.8/sound/usb/line6
+> cd linux-source-6.12/sound/usb/line6
 > make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
 ```
 if all is ok you have successfully build the modules for the PODHD Pro X.  
