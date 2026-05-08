@@ -1,0 +1,1 @@
+Before building copy the line6 directory to:   /usr/src/linux-source-x.xx/sound/usb

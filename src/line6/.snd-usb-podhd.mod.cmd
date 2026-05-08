@@ -1,0 +1,1 @@
+savedcmd_/usr/src/linux-source-6.12/sound/usb/line6/snd-usb-podhd.mod := printf '%s\n'   podhd.o | awk '!x[$$0]++ { print("/usr/src/linux-source-6.12/sound/usb/line6/"$$0) }' > /usr/src/linux-source-6.12/sound/usb/line6/snd-usb-podhd.mod
