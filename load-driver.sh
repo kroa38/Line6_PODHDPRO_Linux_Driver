@@ -1,10 +1,8 @@
 #!/bin/bash
-# this script load driver 
-# this script use a dedicated directory but you can change it
-# see also script podhd.sh
-
+echo 'unload driver'
+sudo /usr/sbin/rmmod snd-usb-podhd 2>/dev/null
+sudo /usr/sbin/rmmod snd-usb-line6 2>/dev/null
 echo 'load driver for line6'
-/usr/sbin/insmod /home/dell/line6/snd-usb-line6.ko
+sudo /usr/sbin/insmod /home/dell/line6/snd-usb-line6.ko
 echo 'load driver for PodHD Pro X'
-/usr/sbin/insmod /home/dell/line6/snd-usb-podhd.ko
-
+sudo /usr/sbin/insmod /home/dell/line6/snd-usb-podhd.ko
